@@ -224,3 +224,20 @@ label {
     height: 100%;
     object-fit: cover;
 }
+
+@media (max-width: 950px) {
+    #left {
+        width: 100%;
+    }
+
+    #right{
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .view-form {
+        width: 100%;
+        background-color: var(--background);
+    }
+}
