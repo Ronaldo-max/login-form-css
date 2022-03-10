@@ -56,6 +56,8 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transition: all 2s linear;
 }
 
 form {
@@ -173,6 +175,7 @@ label {
     vertical-align: middle;
     margin-right: 8px;
     margin-bottom: 3px;
+    cursor: pointer;
 }
 
 .checkbox #checkbox:checked + label::before {
@@ -220,6 +223,7 @@ label {
 }
 
 #right img {
+    transition: all 2s linear;
     width: 100%;
     height: 100%;
     object-fit: cover;
