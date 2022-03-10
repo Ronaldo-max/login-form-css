@@ -12,6 +12,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body {
@@ -38,6 +39,7 @@ main {
 
 section{
     width: 50%;
+    height: 100%;
 
     display: flex;
     align-items: center;
@@ -48,7 +50,8 @@ section{
     background-color: var(--form-background);
 
     width: 450px;
-    height: 400px;
+    height: 420px;
+    border-radius: 5px;
 
     display: flex;
     justify-content: center;
@@ -86,11 +89,12 @@ span {
 
 fieldset {
     border: none;
+    margin: 0 0 15px 0;
 }
 
 label {
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     color: var(--text-base);
 }
@@ -101,8 +105,122 @@ label {
     align-items: center;
     padding: 10px;
     border: 2px solid var(--text-base);
+    gap: 0.5rem;
+    border-radius: 5px;
+    width: 300px;
 }
 
-input:focus.view-input {
+.view-input:focus-within {
     border: 2px solid var(--primary-color);
+}
+
+.img-input-two{
+    display: none;
+}
+
+.view-input:focus-within .img-input-one {
+    display: none;
+}
+
+.view-input:focus-within .img-input-two {
+    display: inline;
+}
+
+#email, #password {
+    outline: none;
+    border: none;
+    background: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-base);
+    width: 100%;
+}
+
+#email::placeholder, #password::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-base);
+}
+
+.view-check-reset {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.checkbox label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-base);
+}
+
+.checkbox #checkbox {
+    display: none;
+}
+
+.checkbox #checkbox + label::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    background-color: var(--form-background);
+    border: 1px solid var(--text-base);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 3px;
+}
+
+.checkbox #checkbox:checked + label::before {
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    background-image: url(./assets/check.svg);
+    background-position: center;
+}
+
+.reset {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.button-login {
+    background-color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--background);
+    border: none;
+    width: 300px;
+    height: 45px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.sign-in {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--primary-color);
+    width: 300px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.sign-in a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+#right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

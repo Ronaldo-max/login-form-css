@@ -25,7 +25,8 @@
                     <fieldset>
                         <label for="email">E-mail:</label>
                         <div class="view-input">
-                            <img src="./assets/mail.svg" alt="mail">
+                            <img src="./assets/mail.svg" alt="mail" class="img-input-one">
+                            <img src="./assets/mail-focus.svg" alt="mail" class="img-input-two">
                             <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
                         </div>
                     </fieldset>
@@ -33,20 +34,22 @@
                     <fieldset>
                         <label for="password">Senha:</label>
                         <div class="view-input">
-                            <img src="./assets/lock.svg" alt="lock">
+                            <img src="./assets/lock.svg" alt="lock" class="img-input-one">
+                            <img src="./assets/lock-focus.svg" alt="lock" class="img-input-two">
                             <input type="password" name="password" id="password" placeholder="Digite sua senha">
                         </div>
                     </fieldset>
 
                     <div class="view-check-reset">
-                        <p class="checkbox">
-                            <input type="checkbox"> Lembre-me
-                        </p>
+                        <div class="checkbox">
+                            <input type="checkbox" id="checkbox">
+                            <label for="checkbox">Lembre-me</label>
+                        </div>
 
-                        <a href="#">Esqueci minha senha</a>
+                        <a href="#" class="reset">Esqueci minha senha</a>
                     </div>
 
-                    <button>Entrar</button>
+                    <button class="button-login">ENTRAR</button>
 
                     <p class="sign-in">
                         Não tem uma conta? <a href="#">Registre-se</a>
